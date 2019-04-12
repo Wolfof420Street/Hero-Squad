@@ -1,0 +1,17 @@
+<h1>List of Heroes!</h1>
+#if ($heroes)
+    <ul>
+    #foreach ($hero in $heroes)
+    <p> Your Hero is : </p>
+    <li> $task.getDescription() </li>
+#else
+    <p> The heroes are Zero </p>
+#end
+    <p>Add a new Hero:</p>
+
+<form action="/heroes" method="post">
+  <label for="description">Hero Description</label>
+  <input id="description" name="description" type="text">
+
+  <button type="submit" class="btn btn-default">Save your Hero</button>
+</form>
