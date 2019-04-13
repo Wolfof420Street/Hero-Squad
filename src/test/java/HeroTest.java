@@ -27,6 +27,11 @@ public class HeroTest {
         assertEquals(LocalDateTime.now().getDayOfWeek(), myHero.getCreatedAt().getDayOfWeek());
     }
     @Test
+    public void getStrength_instantiatesWithStrength_String () {
+        Hero myHero = new Hero("Batman", "69", "Money", "Alfred");
+        assertEquals("Money", myHero.getStrength());
+    }
+    @Test
     public void all_returnsAllInstancesofHero_true () {
         Hero firstHero = new Hero("Batman", "69", "money", "Weak");
         Hero secondHero = new Hero("Superman", "1000", "super strength", "cryptonite");
