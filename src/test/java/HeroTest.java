@@ -32,6 +32,16 @@ public class HeroTest {
         assertEquals("Money", myHero.getStrength());
     }
     @Test
+    public void getWeakness_instantiatesWithWeakness () {
+        Hero myHero = new Hero("Batman", "69", "Money", "Alfred");
+        assertEquals("Alfred", myHero.getWeakness());
+    }
+    @Test
+    public void getAge_instantiatesWithAge_String () {
+        Hero myHero = new Hero("Batman", "69", "Money", "Alfred");
+        assertEquals("69", myHero.getAge());
+    }
+    @Test
     public void all_returnsAllInstancesofHero_true () {
         Hero firstHero = new Hero("Batman", "69", "money", "Weak");
         Hero secondHero = new Hero("Superman", "1000", "super strength", "cryptonite");
