@@ -15,15 +15,37 @@ public class App {
             model.put("template", "templates/index.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-
+        get("heroes/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("template", "templates/hero-form.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+        get("/heroes", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("heroes", Hero.all());
+            model.put("template", "templates/heroes.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+        get("/heroes/:id", (request, response) -> {
+            HashMap<String, Object> model = new HashMap<String, Object>();
+            Hero hero = Hero.find(Integer.parseInt(request.params(":id")));
+            model.put("hero", hero);
+            model.put("template", "templates/hero.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
         post("/heroes", (request , response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
 
          String description = request.queryParams("description");
-         Hero newHero = new Hero(description);
+         String age = request.queryParams("age");
+         String strength = request.queryParams("strength");
+         String weakness = request.queryParams("weakness");
+
+
+         Hero newHero = new Hero(description, age, strength, weakness);
          request.session().attribute("hero", newHero);
 
-         model.put("template", "templates/succes.vtl");
+         model.put("template", "templates/success.vtl");
          return new ModelAndView(model, layout);
          }, new VelocityTemplateEngine());
         get("/", (request, response) -> {
@@ -42,13 +64,23 @@ public class App {
             }
 
             String description = request.queryParams("description");
-            Hero newHero = new Hero(description);
+            String age = request.queryParams("age");
+            String strength = request.queryParams("strength");
+            String weakness = request.queryParams("weakness");
+
+            Hero newHero = new Hero(description, age, strength, weakness);
             heroes.add(newHero);
 
             model.put("template", "templates/success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-
+        get("/heroes/:id", (request, response) -> {
+            HashMap<String, Object> model = new HashMap<String, Object>();
+            Hero hero = Hero.find(Integer.parseInt(request.params(":id")));
+            model.put("hero", hero);
+            model.put("template", "templates/hero.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
     }
          }
 
