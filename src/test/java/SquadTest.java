@@ -47,10 +47,15 @@ public class SquadTest {
         assertEquals(0, testSquad.getHeroes().size());
     }
     @Test
-    public void addTask_addsTaskToList_true() {
+    public void addHeroes_addsHeroesToList_true() {
         Squad testSquad = new Squad("Marvel");
         Hero testHero = new Hero ("SpiderMan", "69", "web", "death");
-        testHero.addHero(testHero);
+        testSquad.addHero(testHero);
         assertTrue(testSquad.getHeroes().contains(testSquad));
     }
+    @Test
+    public void find_returnsNullWhenNoHeroFound_null() {
+        assertTrue(Squad.find(999) == null);
     }
+}
+
