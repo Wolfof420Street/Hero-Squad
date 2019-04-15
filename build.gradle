@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id 'application'
 }
-archiveBaseName = "HeroSquad"
 group 'com.wolf.HeroSquad'
 version '1.0-SNAPSHOT'
 mainClassName ='App'
@@ -19,4 +18,4 @@ dependencies {
     compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'}
 
 defaultTasks = ['clean']
-task stage(dependsOn: ['clean', 'installApp'])
+task stage(dependsOn: ['clean', 'installDist'])
