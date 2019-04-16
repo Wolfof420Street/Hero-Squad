@@ -30,5 +30,9 @@ Currently there are no known bugs but incase of any bugs contact me at billodida
 Email : billodida420@gmail.com
 Twitter: @fbillionare
 
-##
+##License
+This application uses the MIT license
+
+##COpyright
+Bill Odida © 2019
 
