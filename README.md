@@ -14,4 +14,21 @@ Bill Odida
 7. open the project folder and enter the command `gradle run`
 8. open your browser `localhost:4567`
 
+##Technologies Used
+1. Java
+2. Spark
+3. HTML
+4. CSS
+5. Bootstrap
+6. Gradle
+7. IntelliJ IDea
+
+##Known Bugs
+Currently there are no known bugs but incase of any bugs contact me at billodida420@gmail.com
+
+##Contacts
+Email : billodida420@gmail.com
+Twitter: @fbillionare
+
 ##
+
