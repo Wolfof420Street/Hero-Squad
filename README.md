@@ -10,3 +10,8 @@ Bill Odida
 3.Download gradle by writing the command 'wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp'
 4. unzip the file by writing the command `sudo unzip -d /opt/gradle /tmp/gradle-*.zip`
 5. setup environment variables `sudo nano /etc/profile.d/gradle.sh`
+6. make the script executable `sudo chmod +x /etc/profile.d/gradle.sh`
+7. open the project folder and enter the command `gradle run`
+8. open your browser `localhost:4567`
+
+##
