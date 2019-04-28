@@ -1,38 +1,50 @@
-##HERO SQUAD
-A app that allows you to recruit a well-balanced team of superheroes (or any other character-type of your choosing).
+# Hero Squad
+#### Hero Squad, April 20th 2019
+#### By **Wolf of 420 Street**
 
-##Author
-Bill Odida
+## Author's name
+Wolf of 420 Street
+## Description
 
-##Installation Instructions
-1.Enter the command `git clone https://github.com/Wolfof420Street/HeroSquad.git` on your terminal
-2.Install Open JDk on your computer by writing the command `sudo apt update` followed by the `sudo apt install openjdk-8-jdk` command
-3.Download gradle by writing the command 'wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp'
-4. unzip the file by writing the command `sudo unzip -d /opt/gradle /tmp/gradle-*.zip`
-5. setup environment variables `sudo nano /etc/profile.d/gradle.sh`
-6. make the script executable `sudo chmod +x /etc/profile.d/gradle.sh`
-7. open the project folder and enter the command `gradle run`
-8. open your browser `localhost:4567`
+```bash
+Its an app that allows the user to add a list of the squads, and for each squad, add a hero who is part  of that squad.
+The squads are defined independently, so each hero only belongs to a single squad.
+```
+## Technologies Used
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
-##Technologies Used
-1. Java
-2. Spark
-3. HTML
-4. CSS
-5. Bootstrap
-6. Gradle
-7. IntelliJ IDea
+## User Requirements
+```bash
+The applications allow users to do the following:
+1.Add a new stylist
+2.Assign a new client to a stylist
+4.View a list of current stylists
+3.View a list of clients assigned to a stylist
 
-##Known Bugs
-Currently there are no known bugs but incase of any bugs contact me at billodida420@gmail.com
+```
+## Installation Instructions 
+```bash
+1.Enter the command git clone https://github.com/Wolfof420Street/HeroSquad.git on your terminal 
+2.Install Open JDk on your computer by writing the command sudo apt update followed by the sudo apt install openjdk-8-jdk command 
+3.Download gradle by writing the command 'wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp' 
+4. unzip the file by writing the command sudo unzip -d /opt/gradle /tmp/gradle-*.zip 
+5. setup environment variables sudo nano /etc/profile.d/gradle.sh 
+6. make the script executable sudo chmod +x /etc/profile.d/gradle.sh 
+7. open the project folder and enter the command gradle run 
+8. open your browser localhost:4567
+```
 
-##Contacts
-Email : billodida420@gmail.com
-Twitter: @fbillionare
 
-##License
-This application uses the MIT license
+## Contact Details
+```bash
+You can contact me at billodida420@gmail.com
+```
 
-##COpyright
-Bill Odida © 2019
+## License
+- This project is licensed under the MIT Open Source license Copyright (c) 2019. [Wolf of 420 Street](https://github.com/Wolfof420Street/HairSalon/blob/master/LICENCE)
 
+[![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
