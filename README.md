@@ -19,10 +19,10 @@ The squads are defined independently, so each hero only belongs to a single squa
 ## User Requirements
 ```bash
 The applications allow users to do the following:
-1.Add a new stylist
-2.Assign a new client to a stylist
-4.View a list of current stylists
-3.View a list of clients assigned to a stylist
+1.Add a new squad
+2.Assign a new hero to a squad
+4.View a list of current squads
+3.View a list of heroes assigned to a squad
 
 ```
 ## Installation Instructions 
